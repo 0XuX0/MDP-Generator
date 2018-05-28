@@ -1,0 +1,11 @@
+mdp
+module Driver_behavior
+state : [0..2];
+[]state=0 & act=1->0.63:(state'=0);
+[]states=0 & act=1->0.06:(state'=1)+0.31:(state'=2);
+[]states=1 & act=1->0.4:(state'=0)+0.07:(state'=1)+0.53:(state'=2);
+[]states=0 & act=2->0.53:(state'=0)+0.13:(state'=1)+0.33:(state'=2);
+[]states=1 & act=2->0.44:(state'=0)+0.23:(state'=1)+0.33:(state'=2);
+[]states=2 & act=3->0.28:(state'=0)+0.04:(state'=1)+0.68:(state'=2);
+[]states=2 & act=4->0.27:(state'=0)+0.05:(state'=1)+0.68:(state'=2)
+endmodule

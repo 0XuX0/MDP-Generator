@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.util.*?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane prefHeight="278.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cmdp.MyController">
+   <children>
+      <TextField fx:id="myTextField1" layoutX="37.0" layoutY="47.0" promptText="Open your Training Data" />
+      <Button fx:id="openDataFileButton" layoutX="244.0" layoutY="47.0" mnemonicParsing="false" onAction="#openTrainingDataFile" prefHeight="15.0" prefWidth="68.0" text="File" />
+      <Button fx:id="traningButton" layoutX="84.0" layoutY="105.0" mnemonicParsing="false" onAction="#Traingingdata" prefHeight="23.0" prefWidth="68.0" text="Training" />
+      <Button fx:id="evaluatingButton" layoutX="240.0" layoutY="105.0" mnemonicParsing="false" onAction="#evaluatingClassifier" prefHeight="23.0" prefWidth="76.0" text="Evaluating" />
+      <Button fx:id="testingButton" layoutX="244.0" layoutY="216.0" mnemonicParsing="false" onAction="#TestingData" prefHeight="16.0" prefWidth="68.0" text="Test" />
+      <TextField fx:id="myTextField2" layoutX="37.0" layoutY="157.0" promptText="Open your Test Data" />
+      <Button fx:id="openTestDataButton" layoutX="240.0" layoutY="157.0" mnemonicParsing="false" onAction="#openTestingDataFile" prefHeight="23.0" prefWidth="76.0" text="File" />
+   </children>
+</AnchorPane>
